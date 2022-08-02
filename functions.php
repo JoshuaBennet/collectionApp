@@ -17,20 +17,27 @@ $result = $query->fetchAll();
 //var_dump($result);
 
 
-function createRaceItem(array $result) {
+function createRaceItem(array $race) {
+    foreach ($race as $stage) {
+
     echo "<div>";
-    echo $result['name'];
+    echo $stage['name'];
     echo "<p></p>";
-    echo $result['description'];
+    echo $stage['description'];
     echo "<p></p>";
-    echo $result['traits'];
+    echo $stage['traits'];
     echo "<p></p>";
-    echo $result['variantRaceName'];
+    echo $stage['variantRaceName'];
     echo "<p></p>";
-    echo $result['VariantTraits'];
+    echo $stage['variantTraits'];
     echo "<p></p>";
-    echo "<p>    <img src="images/" . "$result['picture']" >  </p>";
+//    echo '<p> </p><img src="images/' . '$stage['picture']> </p>';
     echo "</div>";
-
-
+    echo '<p class="divider">------------------------------------</p>';
+    }
 }
+
+
+//
+//    var_dump($result);
+

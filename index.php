@@ -1,3 +1,19 @@
+<?php
+require_once 'functions.php';
+$connectionString = 'mysql:host=db; dbname=dndraces';
+$dbUsername ='root';
+$dbPassword = 'password';
+$db = new PDO($connectionString, $dbUsername, $dbPassword);
+$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+
+$queryString = 'SELECT * FROM `races`;';
+$query = $db->prepare($queryString);
+$query->execute();
+
+$result = $query->fetchAll();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,11 +29,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<?php
-require_once 'functions.php';
 
-
-?>
 <h1>
     D&D Races
 </h1>
@@ -31,37 +43,9 @@ require_once 'functions.php';
 </header>
     <img class="party_img" src="images/partyHomeSplash.jpeg" alt="A Dungeons and dragons party">
     <div class="race_item">
-        <?php createRaceItem(); ?>
-    </div>
-    <div class="race_item">
-
-    </div>
-    <div class="race_item">
-
-    </div>
-    <div class="race_item">
-
-    </div>
-    <div class="race_item">
-
-    </div>
-    <div class="race_item">
-
-    </div>
-    <div class="race_item">
-
-    </div>
-    <div class="race_item">
-
-    </div>
-    <div class="race_item">
-
+        <?php createRaceItem($result); ?>
     </div>
 
-
-
-
-
-
+    <p class="creator_name">By Joshua Bennet</p>
 </body>
 </html>

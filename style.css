@@ -8,6 +8,7 @@ nav {
 }
 .up {
     font-size: 50px;
+    text-decoration: none;
 }
 .home_welcome {
     text-align: center;
@@ -28,4 +29,11 @@ nav {
     width: 50%;
     padding: 40px;
     border: solid black thin;
+}
+.divider {
+
+
+}
+.creator_name {
+    font-size: 10px;
 }
