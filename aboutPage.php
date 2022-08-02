@@ -4,6 +4,7 @@
     <title>
         D&D Races About
     </title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="keywords" content="HTML, CSS, PHP">
@@ -13,7 +14,6 @@
 </head>
 <body>
 <?php
-session_start();
 require_once 'functions.php';
 require_once 'database/database.php';
 
