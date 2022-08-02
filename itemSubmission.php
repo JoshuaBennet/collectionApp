@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>
-        "Submit New Race"
+        D&D Races Submit New Race
     </title>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
