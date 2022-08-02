@@ -30,7 +30,34 @@ require_once 'database/database.php';
 <header class="home_welcome">
     Welcome to my Dungeons and Dragons races site.
 </header>
-<img class="party_img" src="images/partyHomeSplash.jpeg" alt="A Dungeons and dragons party">
+    <img class="party_img" src="images/partyHomeSplash.jpeg" alt="A Dungeons and dragons party">
+    <div class="race_item">
+
+    </div>
+    <div class="race_item">
+
+    </div>
+    <div class="race_item">
+
+    </div>
+    <div class="race_item">
+
+    </div>
+    <div class="race_item">
+
+    </div>
+    <div class="race_item">
+
+    </div>
+    <div class="race_item">
+
+    </div>
+    <div class="race_item">
+
+    </div>
+    <div class="race_item">
+
+    </div>
 
 
 

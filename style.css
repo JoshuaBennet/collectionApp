@@ -15,3 +15,9 @@ nav {
     margin-right: auto;
     width: 50%;
 }
+.race_item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px;
+    border: solid black thin;
+}
