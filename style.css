@@ -19,6 +19,9 @@ nav {
     margin-right: auto;
     margin-top: 20px;
     width: 50%;
+    border: brown;
+    border-style: groove;
+    border-width: thick;
 }
 .race_item {
     margin-top: 20px;
