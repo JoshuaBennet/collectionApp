@@ -19,17 +19,19 @@ require_once 'database/database.php';
 
 
 ?>
-    <h1>
-        D&D Races
-    </h1>
-<section id="home" class="home_section">
+<h1>
+    D&D Races
+</h1>
+<section id="page_top_navigation" class="home_section">
     <nav class="navbar">
         <div class="menu_top">
-            <a class="home_icon" href="#home"><i class="fa-solid fa-house-chimney"></i></a>
-            <a href="#about">About</a>
+            <a href="index.php">Home</a>
         </div>
     </nav>
 </section>
-
+<header class="home_welcome">
+    Welcome to my Dungeons and Dragons races site, please use the links to find out more.
+</header>
+<img class="party_img" src="images/partyHomeSplash.jpeg" alt="A Dungeons and dragons party">
 </body>
 </html>

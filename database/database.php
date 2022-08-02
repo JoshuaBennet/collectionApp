@@ -11,5 +11,5 @@ $query->execute();
 
 $result = $query->fetchAll();
 
-echo '<pre>';
-var_dump($result);
+//echo '<pre>';
+//var_dump($result);
