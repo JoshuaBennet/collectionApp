@@ -47,5 +47,6 @@ $result = $query->fetchAll();
     </div>
 
     <p class="creator_name">By Joshua Bennet</p>
+
 </body>
 </html>
