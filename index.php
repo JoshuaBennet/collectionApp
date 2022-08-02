@@ -24,7 +24,7 @@ require_once 'database/database.php';
 </h1>
     <nav class="navbar">
         <div class="menu_top">
-            <a href="index.php">Home</a>
+            <a class="up" href="index.php">^</a>
         </div>
     </nav>
 <header class="home_welcome">

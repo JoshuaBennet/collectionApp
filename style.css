@@ -3,8 +3,11 @@ h1 {
 }
 nav {
     position: fixed;
-    right: 20px;
+    right: 10px;
     top: 10px;
+}
+.up {
+    font-size: 50px;
 }
 .home_welcome {
     text-align: center;
@@ -13,11 +16,16 @@ nav {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     width: 50%;
 }
 .race_item {
     margin-top: 20px;
     margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     padding: 40px;
     border: solid black thin;
 }
