@@ -14,6 +14,7 @@
 </head>
 <body>
 <?php
+require_once 'fonts.php';
 require_once 'functions.php';
 require_once 'database/database.php';
 
@@ -22,6 +23,11 @@ require_once 'database/database.php';
     <h1>
         D&D Races
     </h1>
-
+<nav class="navbar">
+    <div class="menu_top">
+        <a href="index.php">Home</a>
+        <a href="aboutPage.php">About</a>
+    </div>
+</nav>
 </body>
 </html>

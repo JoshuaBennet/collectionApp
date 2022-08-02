@@ -14,6 +14,7 @@
 </head>
 <body>
 <?php
+require_once 'fonts.php';
 require_once 'functions.php';
 require_once 'database/database.php';
 

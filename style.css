@@ -1,4 +1,11 @@
 h1 {
-    width: auto;
+    width: 50%;
 
+}
+.party_img {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: auto;
+    width: 0.5vw;
 }
