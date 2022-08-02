@@ -17,4 +17,20 @@ $result = $query->fetchAll();
 //var_dump($result);
 
 
+function createRaceItem(array $result) {
+    echo "<div>";
+    echo $result['name'];
+    echo "<p></p>";
+    echo $result['description'];
+    echo "<p></p>";
+    echo $result['traits'];
+    echo "<p></p>";
+    echo $result['variantRaceName'];
+    echo "<p></p>";
+    echo $result['VariantTraits'];
+    echo "<p></p>";
+    echo "<p>    <img src="images/" . "$result['picture']" >  </p>";
+    echo "</div>";
 
+
+}

@@ -15,7 +15,6 @@
 <body>
 <?php
 require_once 'functions.php';
-require_once 'database/database.php';
 
 
 ?>
@@ -32,7 +31,7 @@ require_once 'database/database.php';
 </header>
     <img class="party_img" src="images/partyHomeSplash.jpeg" alt="A Dungeons and dragons party">
     <div class="race_item">
-
+        <?php createRaceItem(); ?>
     </div>
     <div class="race_item">
 
