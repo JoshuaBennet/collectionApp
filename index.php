@@ -43,8 +43,9 @@ $result = $query->fetchAll();
 </header>
     <img class="party_img" src="images/partyHomeSplash.jpeg" alt="A Dungeons and dragons party">
     <div class="race_item">
-        <?php createRaceItem($result); ?>
+         <?php echo createRaceItem($result); ?>
     </div>
+
 
     <p class="creator_name">By Joshua Bennet</p>
 
