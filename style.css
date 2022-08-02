@@ -1,11 +1,43 @@
 h1 {
-    width: 50%;
-
+    text-align: center;
+}
+nav {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+.up {
+    font-size: 50px;
+    text-decoration: none;
+}
+.home_welcome {
+    text-align: center;
 }
 .party_img {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    height: auto;
-    width: 0.5vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 50%;
+    border: brown;
+    border-style: groove;
+    border-width: thick;
 }
+.race_item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 40px;
+    border: solid black thin;
+}
+.divider {
+
+
+}
+.creator_name {
+    font-size: 10px;
+}
+
