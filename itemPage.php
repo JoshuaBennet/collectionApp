@@ -4,6 +4,7 @@
     <title>
         D&D Races
     </title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="keywords" content="HTML, CSS, PHP">
