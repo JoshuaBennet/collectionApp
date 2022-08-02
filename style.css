@@ -1,10 +1,17 @@
 h1 {
-    width: 50%;
-
+    text-align: center;
+}
+nav {
+    position: fixed;
+    right: 20px;
+    top: 10px;
+}
+.home_welcome {
+    text-align: center;
 }
 .party_img {
-    margin: 0;
-    padding: 0;
-    height: auto;
-    width: 50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

@@ -22,16 +22,20 @@ require_once 'database/database.php';
 <h1>
     D&D Races
 </h1>
-<section id="page_top_navigation" class="home_section">
     <nav class="navbar">
         <div class="menu_top">
             <a href="index.php">Home</a>
         </div>
     </nav>
-</section>
 <header class="home_welcome">
-    Welcome to my Dungeons and Dragons races site, please use the links to find out more.
+    Welcome to my Dungeons and Dragons races site.
 </header>
 <img class="party_img" src="images/partyHomeSplash.jpeg" alt="A Dungeons and dragons party">
+
+
+
+
+
+
 </body>
 </html>
