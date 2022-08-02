@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>
-        "About"
+        D&D Races About
     </title>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">

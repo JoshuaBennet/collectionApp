@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>
-        "Races"
+        D&D Races
     </title>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
