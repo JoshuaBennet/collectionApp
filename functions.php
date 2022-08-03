@@ -26,26 +26,26 @@ function createRaceItem(array $race) {
 //        }
 
         $string_output = '<div class="race_item">' .
-            $race['name'] .
-            "<p></p>" .
-            $race['description'] .
-            "<p></p>" .
-            $race['age'] .
-            "<p></p>" .
-            $race['size'] .
-            "<p></p>" .
-            $race['speed'] .
-            "<p></p>" .
-            $race['ability'] .
-            "<p></p>" .
-            $race['lang'] .
-            "<p></p>" .
-            $race['other'] .
-            "<p></p>" .
-            $race['otherAdditional'] .
-            "<p></p>" .
-            $race['otherAddTwo'] .
-            "<p></p>" .
+
+            "<p class='title_in_card'>" . $race['name'] . "</p>" .
+
+            "<p>" . $race['description'] . "</p>" .
+
+            "<p>" . $race['age'] . "</p>" .
+
+            "<p>" . $race['size'] . "</p>" .
+
+            "<p>" . $race['speed'] . "</p>" .
+
+            "<p>" . $race['ability'] . "</p>" .
+
+            "<p>" .  $race['lang'] . "</p>" .
+
+            "<p>" . $race['other'] . "</p>" .
+
+            "<p>" . $race['otherAdditional'] . "</p>" .
+
+            "<p>" . $race['otherAddTwo'] . "</p>" .
             "</div>";
 
 //    }
