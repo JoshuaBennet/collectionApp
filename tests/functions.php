@@ -7,7 +7,11 @@ class Functions extends TestCase
 {
     function testSuccessDisplayRaces()
     {
-        $input = [];
+        $input = [
+            
+
+
+        ];
         $expectedOutput = '';
         $actualOutput = createRaceItem($input);
         $this->assertEquals($expectedOutput, $actualOutput);
