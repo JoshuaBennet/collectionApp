@@ -15,31 +15,42 @@ $result = $query->fetchAll();
 //echo '<pre>';
 //var_dump($result);
 
+    $link_var = '';
+function createRaceItem(array $race)
+{
+    foreach ($race as $trait) {
 
-function createRaceItem(array $race) {
-    foreach ($race as $stage) {
-//        if($stage == 'name') {
-//            continue;
+        $string_output = "<div>" .
+            $trait['name'] .
+            "<p></p>" .
+            $trait['description'] .
+            "<p></p>" .
+            $trait['age'] .
+            "<p></p>" .
+            $trait['size'] .
+            "<p></p>" .
+            $trait['speed'] .
+            "<p></p>" .
+            $trait['ability'] .
+            "<p></p>" .
+            $trait['lang'] .
+            "<p></p>" .
+            $trait['other'] .
+            "<p></p>" .
+            $trait['otherAdditional'] .
+            "<p></p>" .
+            $trait['otherAddTwo'] .
+            "<p></p>" .
+            "</div>" .
 
-        echo "<div>";
-        echo $stage['name'];
-        echo "<p></p>";
-        echo $stage['description'];
-        echo "<p></p>";
-        echo $stage['traits'];
-        echo "<p></p>";
-        echo $stage['variantRaceName'];
-        echo "<p></p>";
-        echo $stage['variantTraits'];
-        echo "<p></p>";
-//      echo '<p> <img src="images/' . '$stage['picture']> </p>';
-        echo "</div>";
-        echo '<p class="divider">------------------------------------</p>';
-//    }
     }
+    $link_var .= $string_output;
 }
+//$some_var = '';
+//foreach (){
 
-//        return "<div>" .
+
+//
 //            $stage['name'] .
 //            "<p></p>" .
 //            $stage['description'] .
@@ -53,6 +64,7 @@ function createRaceItem(array $race) {
 ////     '<p> <img src="images/' . '$stage['picture']> </p>' .
 //            "</div>" .
 //            '<p class="divider">------------------------------------</p>';
+//            $some_var.=$stringOutput;
 ////    }
 //    }
 //}
