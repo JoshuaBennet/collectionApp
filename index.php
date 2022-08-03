@@ -47,6 +47,20 @@ $allRaces = $query->fetchAll();
     <div >
          <?php
          foreach ($allRaces as $race) {
+
+             if(!is_array($race) ||
+                !array_key_exists('name', $race) ||
+                !array_key_exists('description', $race) ||
+                !array_key_exists('age', $race) ||
+                !array_key_exists('size', $race) ||
+                !array_key_exists('speed', $race) ||
+                !array_key_exists('ability', $race) ||
+                !array_key_exists('lang', $race) ||
+                !array_key_exists('other', $race) ||
+                !array_key_exists('otherAdditional', $race) ||
+                !array_key_exists('otherAddTwo', $race))
+            return '';
+
              echo createRaceItem($race);
          }
          ?>
