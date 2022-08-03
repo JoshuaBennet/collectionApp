@@ -20,6 +20,10 @@ $allRaces = $query->fetchAll();
     <title>
         D&D Races Homepage
     </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -38,9 +42,6 @@ $allRaces = $query->fetchAll();
             <a class="up" href="index.php">^</a>
         </div>
     </nav>
-<header class="home_welcome">
-    Welcome to my Dungeons and Dragons races site.
-</header>
     <img class="party_img" src="images/partyHomeSplash.jpeg" alt="A Dungeons and dragons party">
     <div >
          <?php
