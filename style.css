@@ -27,6 +27,14 @@ nav {
     border-style: groove;
     border-width: thick;
 }
+.image_ref {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+
+}
 .race_item {
     margin-top: 20px;
     margin-bottom: 20px;

@@ -42,7 +42,8 @@ $allRaces = $query->fetchAll();
             <a class="up" href="index.php">^</a>
         </div>
     </nav>
-    <img class="party_img" src="images/partyHomeSplash.jpeg" alt="A Dungeons and dragons party">
+    <img class="party_img" src="images/partyHomeSplash.jpeg" alt="A Dungeons and dragons party. Image: Wizards of the Coast">
+    <p class = "image_ref">Image: Wizards of the Coast</p>
     <div >
          <?php
          foreach ($allRaces as $race) {
