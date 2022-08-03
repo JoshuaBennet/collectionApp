@@ -10,7 +10,7 @@ $queryString = 'SELECT * FROM `races`;';
 $query = $db->prepare($queryString);
 $query->execute();
 
-$result = $query->fetchAll();
+$allRaces = $query->fetchAll();
 
 ?>
 
@@ -20,6 +20,10 @@ $result = $query->fetchAll();
     <title>
         D&D Races Homepage
     </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -38,15 +42,18 @@ $result = $query->fetchAll();
             <a class="up" href="index.php">^</a>
         </div>
     </nav>
-<header class="home_welcome">
-    Welcome to my Dungeons and Dragons races site.
-</header>
-    <img class="party_img" src="images/partyHomeSplash.jpeg" alt="A Dungeons and dragons party">
-    <div class="race_item">
-        <?php createRaceItem($result); ?>
+    <img class="party_img" src="images/partyHomeSplash.jpeg" alt="A Dungeons and dragons party. Image: Wizards of the Coast">
+    <p class = "image_ref">Image: Wizards of the Coast</p>
+    <div >
+         <?php
+         foreach ($allRaces as $race) {
+             echo createRaceItem($race);
+         }
+         ?>
     </div>
 
-    <p class="creator_name">By Joshua Bennet</p>
+
+    <p class="creator_name" alt="The name of the site creator.">By Joshua Bennet</p>
 
 </body>
 </html>
