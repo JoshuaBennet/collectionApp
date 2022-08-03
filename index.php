@@ -53,7 +53,7 @@ $allRaces = $query->fetchAll();
     </div>
 
 
-    <p class="creator_name">By Joshua Bennet</p>
+    <p class="creator_name" alt="The name of the site creator.">By Joshua Bennet</p>
 
 </body>
 </html>

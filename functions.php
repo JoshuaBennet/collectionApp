@@ -27,7 +27,7 @@ function createRaceItem(array $race) {
 
         $string_output = '<div class="race_item">' .
 
-            "<p class='title_in_card'>" . $race['name'] . "</p>" .
+            "<h2 class='title_in_card'>" . $race['name'] . "</h2>" .
 
             "<p class='text_in_card'>" . $race['description'] . "</p>" .
 
