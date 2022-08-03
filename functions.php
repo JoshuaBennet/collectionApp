@@ -1,50 +1,56 @@
 <?php
 
-$connectionString = 'mysql:host=db; dbname=dndraces';
-$dbUsername ='root';
-$dbPassword = 'password';
-$db = new PDO($connectionString, $dbUsername, $dbPassword);
-$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+//$connectionString = 'mysql:host=db; dbname=dndraces';
+//$dbUsername ='root';
+//$dbPassword = 'password';
+//$db = new PDO($connectionString, $dbUsername, $dbPassword);
+//$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+//
+//$queryString = 'SELECT * FROM `races`;';
+//$query = $db->prepare($queryString);
+//$query->execute();
+//
+//$result = $query->fetchAll();
+//
+////echo '<pre>';
+////var_dump($result);
+//
+//    $link_var = '';
 
-$queryString = 'SELECT * FROM `races`;';
-$query = $db->prepare($queryString);
-$query->execute();
+function createRaceItem(array $race) {
 
-$result = $query->fetchAll();
+//    foreach ($race as $trait) {
 
-//echo '<pre>';
-//var_dump($result);
+//        if() {
+//            return '';
+//        }
 
-    $link_var = '';
-function createRaceItem(array $race)
-{
-    foreach ($race as $trait) {
+        $string_output = '<div class="race_item">' .
+            $race['name'] .
+            "<p></p>" .
+            $race['description'] .
+            "<p></p>" .
+            $race['age'] .
+            "<p></p>" .
+            $race['size'] .
+            "<p></p>" .
+            $race['speed'] .
+            "<p></p>" .
+            $race['ability'] .
+            "<p></p>" .
+            $race['lang'] .
+            "<p></p>" .
+            $race['other'] .
+            "<p></p>" .
+            $race['otherAdditional'] .
+            "<p></p>" .
+            $race['otherAddTwo'] .
+            "<p></p>" .
+            "</div>";
 
-        $string_output = "<div>" .
-            $trait['name'] .
-            "<p></p>" .
-            $trait['description'] .
-            "<p></p>" .
-            $trait['age'] .
-            "<p></p>" .
-            $trait['size'] .
-            "<p></p>" .
-            $trait['speed'] .
-            "<p></p>" .
-            $trait['ability'] .
-            "<p></p>" .
-            $trait['lang'] .
-            "<p></p>" .
-            $trait['other'] .
-            "<p></p>" .
-            $trait['otherAdditional'] .
-            "<p></p>" .
-            $trait['otherAddTwo'] .
-            "<p></p>" .
-            "</div>" .
-
-    }
-    $link_var .= $string_output;
+//    }
+        return $string_output;
+//    $link_var.= $string_output;
 }
 //$some_var = '';
 //foreach (){

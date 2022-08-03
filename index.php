@@ -10,7 +10,7 @@ $queryString = 'SELECT * FROM `races`;';
 $query = $db->prepare($queryString);
 $query->execute();
 
-$result = $query->fetchAll();
+$allRaces = $query->fetchAll();
 
 ?>
 
@@ -42,8 +42,12 @@ $result = $query->fetchAll();
     Welcome to my Dungeons and Dragons races site.
 </header>
     <img class="party_img" src="images/partyHomeSplash.jpeg" alt="A Dungeons and dragons party">
-    <div class="race_item">
-         <?php echo createRaceItem($result); ?>
+    <div >
+         <?php
+         foreach ($allRaces as $race) {
+             echo createRaceItem($race);
+         }
+         ?>
     </div>
 
 
