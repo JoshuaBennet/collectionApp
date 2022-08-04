@@ -7,11 +7,12 @@ h1 {
     font-size: 4rem;
 }
 nav {
-    position: fixed;
+
     right: 10px;
     top: 10px;
 }
 .up {
+    position: fixed;
     font-size: 50px;
     text-decoration: none;
 }
