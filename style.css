@@ -101,10 +101,22 @@ body {
     text-transform: uppercase;
 }
 
-.new_race_container {
+.new_race {
+    font-size: 2rem;
     display: flex;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
     flex-direction: column;
-    align-items: center;
+    height: 100%;
+}
+
+.labels_for_race {
+    font-size: 2rem;
+    padding: 5px;
+    background: #FFFFFFB7;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 415px) {
