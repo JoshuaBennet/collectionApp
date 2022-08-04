@@ -32,13 +32,13 @@ $allRaces = $query->fetchAll();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<h1>
+<h1 id="top">
     D&D Races
 </h1>
     <nav class="navbar">
         <div class="menu_top">
             <a class="registration_page" href="registration.php">Add new race</a>
-            <a class="up" href="index.php">^</a>
+            <a class="up" href="#top">^</a>
         </div>
     </nav>
     <img class="party_img" src="images/partyHomeSplash.jpeg" alt="A Dungeons and dragons party. Image: Wizards of the Coast">
