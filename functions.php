@@ -30,3 +30,27 @@ function createRaceItem(array $race): string {
 
         return $string_output;
 }
+
+function addRaceToDb($raceInsert)
+{
+
+    $name = $raceInsert['name'];
+    $description = $raceInsert['description'];
+    $age = $raceInsert['age'];
+    $size = $raceInsert['size'];
+    $speed = $raceInsert['speed'];
+    $ability = $raceInsert['ability'];
+    $lang = $raceInsert['lang'];
+    $other = $raceInsert['other'];
+    $otherAdditional = $raceInsert['otherAdditional'];
+    $otherAddTwo = $raceInsert['otherAddTwo'];
+
+    $connectionString = 'mysql:host=db; dbname=dndraces';
+    $dbUsername ='root';
+    $dbPassword = 'password';
+    $db = new PDO($connectionString, $dbUsername, $dbPassword);
+    $queryString = 'INSERT INTO `races` (`name`, `description`, `age`, `size`, `speed`, `ability`, `lang`, `other`, `otherAdditional`, `otherAddTwo`)
+                    VALUES (:name, :description, :age, :size, :speed, :ability, :lang, :other, :otherAdditional, :otherAddTwo)';
+    $query = $db->prepare($queryString);
+    $query->execute(['name' => $name, 'description' => $description, 'age' => $age, 'size' => $size, 'speed' => $speed, 'ability' => $ability, 'lang' => $lang, 'other' => $other, 'otherAdditional' => $otherAdditional, 'otherAddTwo' => $otherAddTwo]);
+}
