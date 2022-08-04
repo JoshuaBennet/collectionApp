@@ -112,6 +112,10 @@ body {
     height: 100%;
 }
 
+.textarea_races_info {
+    resize: vertical;
+}
+
 .labels_for_race {
     font-size: 2rem;
     padding: 5px;
