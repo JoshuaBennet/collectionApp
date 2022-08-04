@@ -2,6 +2,11 @@
     font-size: 12px;
 }
 
+html:focus-within{
+    scroll-behavior: smooth;
+}
+
+
 h1 {
     text-align: center;
     font-family: 'Kaisei Opti', serif;
