@@ -45,7 +45,7 @@ function addRaceToDb($raceInsert){
     $otherAddTwo = $raceInsert['otherAddTwo'];
 
     $connectionString = 'mysql:host=db; dbname=dndraces';
-    $dbUsername = 'root';
+    $dbUsername ='root';
     $dbPassword = 'password';
     $db = new PDO($connectionString, $dbUsername, $dbPassword);
     $queryString = 'INSERT INTO `races` (`name`, `description`, `age`, `size`, `speed`, `ability`, `lang`, `other`, `otherAdditional`, `otherAddTwo`)
