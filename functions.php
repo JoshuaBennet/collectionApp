@@ -1,9 +1,7 @@
 <?php
-
 function createRaceItem(array $race): string {
-
-
-    if (!array_key_exists('name', $race) ||
+    if (
+        !array_key_exists('name', $race) ||
         !array_key_exists('description', $race) ||
         !array_key_exists('age', $race) ||
         !array_key_exists('size', $race) ||
@@ -12,7 +10,8 @@ function createRaceItem(array $race): string {
         !array_key_exists('lang', $race) ||
         !array_key_exists('other', $race) ||
         !array_key_exists('otherAdditional', $race) ||
-        !array_key_exists('otherAddTwo', $race))
+        !array_key_exists('otherAddTwo', $race)
+    )
         return '';
 
         $string_output = "<div class='race_item'>" .
@@ -31,5 +30,3 @@ function createRaceItem(array $race): string {
 
         return $string_output;
 }
-
-?>
