@@ -47,6 +47,9 @@ $allRaces = $query->fetchAll();
     <div >
          <?php
          foreach ($allRaces as $race) {
+
+
+
              echo createRaceItem($race);
          }
          ?>
