@@ -2,10 +2,9 @@
     font-size: 12px;
 }
 
-html:focus-within{
+html:focus-within {
     scroll-behavior: smooth;
 }
-
 
 h1 {
     text-align: center;
@@ -14,7 +13,6 @@ h1 {
 }
 
 nav {
-
     right: 10px;
     top: 10px;
 }
@@ -63,7 +61,7 @@ nav {
     background: #FFFFFFB7;
 }
 
-.title_in_card{
+.title_in_card {
     font-weight: bolder;
     text-decoration: underline;
     font-family: 'Kaisei Opti', serif;
@@ -71,7 +69,7 @@ nav {
     text-align: center;
 }
 
-.text_in_card{
+.text_in_card {
     font-family: 'Kaisei Opti', serif;
     font-size: 1.5rem;
 }

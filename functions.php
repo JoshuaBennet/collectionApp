@@ -31,7 +31,8 @@ function createRaceItem(array $race): string {
         return $string_output;
 }
 
-function addRaceToDb($raceInsert){
+function addRaceToDb($raceInsert)
+{
 
     $name = $raceInsert['name'];
     $description = $raceInsert['description'];
