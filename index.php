@@ -37,6 +37,7 @@ $allRaces = $query->fetchAll();
 </h1>
     <nav class="navbar">
         <div class="menu_top">
+            <a class="registration_page" href="registration.php">Add new race</a>
             <a class="up" href="index.php">^</a>
         </div>
     </nav>
