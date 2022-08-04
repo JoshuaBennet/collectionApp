@@ -101,6 +101,12 @@ body {
     text-transform: uppercase;
 }
 
+.new_race_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media screen and (max-width: 415px) {
     
     * {
